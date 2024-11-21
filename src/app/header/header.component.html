@@ -1,16 +1,50 @@
 <nav class="nav-bar">
     <div class="left-side">
-        <button class="sing-in-btn">ورود/ثبت نام</button>
-        <img src="assets/icons/search-icon.svg" alt="آیکون جستجو" class="search-btn icon">
+        <img src="assets/icons/menu-icon.svg" alt="آیکون منو" class="menu-btn" (click)="isDropDownVisible = !isDropDownVisible">
+        <div class="menu" *ngIf="isDropDownVisible" >
+            <div class="overlay" (click)="isDropDownVisible = !isDropDownVisible"></div>
+            <p class="page-link" (click)="isDropDownVisible = !isDropDownVisible">تماس باما</p>
+            <p class="page-link" (click)="isDropDownVisible = !isDropDownVisible">معرفی</p>
+            <p class="page-link" (click)="isDropDownVisible = !isDropDownVisible">قطعات</p>
+            <p class="page-link" (click)="isDropDownVisible = !isDropDownVisible">خانه</p>
+        </div>
+        <button class="sign-in-btn">ورود/ثبت نام</button>
+        <img src="assets/icons/search-icon.svg" alt="آیکون جستجو" class="search-btn">
         <div class="pages">
-            <a class="page-link">خانه</a>
-            <a class="page-link">قطعات</a>
-            <a class="page-link">معرفی</a>
-            <a class="page-link">تماس باما</a>
+            <p class="page-link">تماس باما</p>
+            <p class="page-link">معرفی</p>
+            <p class="page-link">قطعات</p>
+            <p class="page-link">خانه</p>
         </div>
-        <div class="lab-name">
-            <h3>آزمایشگاه صنعت 4</h3>
-            <img src="assets/logos/iut-logo.svg" alt="لوگو آزمایشگاه" class="logo icon">
+    </div>
+    <div class="lab-name">
+        <h1>آزمایشگاه صنعت 4</h1>
+        <img src="assets/logos/iut-logo.svg" alt="لوگو آزمایشگاه" class="logo icon">
+    </div>
+</nav>
+
+
+<nav class="nav-bar-fix" *ngIf="isFixed">
+    <div class="left-side">
+        <img src="assets/icons/menu-icon.svg" class="menu-btn" (click)="isDropDownVisible = !isDropDownVisible">
+        <div class="menu" *ngIf="isDropDownVisible" >
+            <div class="overlay" (click)="isDropDownVisible = !isDropDownVisible"></div>
+            <p class="page-link" (click)="isDropDownVisible = !isDropDownVisible">تماس باما</p>
+            <p class="page-link" (click)="isDropDownVisible = !isDropDownVisible">معرفی</p>
+            <p class="page-link" (click)="isDropDownVisible = !isDropDownVisible">قطعات</p>
+            <p class="page-link" (click)="isDropDownVisible = !isDropDownVisible">خانه</p>
         </div>
+        <button class="sign-in-btn">ورود/ثبت نام</button>
+        <img src="assets/icons/search-icon.svg" alt="آیکون جستجو" class="search-btn">
+        <div class="pages">
+            <p class="page-link">تماس باما</p>
+            <p class="page-link">معرفی</p>
+            <p class="page-link">قطعات</p>
+            <p class="page-link">خانه</p>
+        </div>
+    </div>
+    <div class="lab-name">
+        <h1>آزمایشگاه صنعت 4</h1>
+        <img src="assets/logos/iut-logo.svg" alt="لوگو آزمایشگاه" class="logo icon">
     </div>
 </nav>
