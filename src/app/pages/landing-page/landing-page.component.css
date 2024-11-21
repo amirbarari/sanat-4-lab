@@ -1,0 +1,35 @@
+.bg-img {
+    height: fit-content;
+    background-image: url('/assets/images/landing-bg.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.descriptions {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 20vh;
+    height: fit-content;
+}
+
+.description {
+    padding: 1.5rem;
+    width: 40rem;
+    height: 50rem;
+    text-align: center;
+}
+
+.title {
+    font-size: 3rem;
+    color: white;
+}
+
+.text {
+    padding-top: 1rem;
+    line-height: 3.5rem;
+    font-size: 2rem;
+    color: white;
+}

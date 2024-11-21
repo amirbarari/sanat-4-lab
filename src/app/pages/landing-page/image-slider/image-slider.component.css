@@ -39,16 +39,37 @@
     width: 4rem;
     height: 4rem;
     cursor: pointer;
-}
-.prev-img:hover {
-    background-color: hsla(198, 95%, 25%, 0.809);
-    border-radius: 50%;
+    clip-path: polygon(70% 0, 23% 49%, 70% 100%, 35% 100%, 0% 50%, 35% 0);
+    background-color: #02A9F7;
+    transition: clip-path 0.3s;
+    z-index: 200;
 }
 
-.prev-img{
+.change-img:hover {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    background-color: #02A9F7;
+    clip-path: polygon(85% 0, 23% 49%, 85% 100%, 35% 100%, 0% 50%, 35% 0);
+}
+
+.prev-img{ 
     left: 0rem;
 }
 .next-img {
     right: 0rem;
     rotate: 180deg;
+}
+
+
+/* @media screen and (max-width: 700px) and (max-height: 700px) {
+    .slide{ width: 95%; height: 100%;}
+    .slider{ height: 200vh; }
+} */
+@media screen and (max-height: 800px) and (max-width: 700px) {
+    .change-img{ display: none;}
+    .slide{ width: 95%; height: 90%;}
+    .description{ font-size: 1.8rem;}
+    .slider{ width: 100vw; height: 40vh;}
 }
