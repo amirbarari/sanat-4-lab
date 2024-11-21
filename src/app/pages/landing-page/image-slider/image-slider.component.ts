@@ -21,7 +21,7 @@ export class ImageSliderComponent implements OnInit{
 
   ngOnInit(): void { this.startAutoSlide(); }
 
-  startAutoSlide(): void { setInterval(() => { this.nextSlide(); }, 3000);}
+  startAutoSlide(): void { setInterval(() => { this.nextSlide(); }, 4000);}
   nextSlide(): void {
     this.currentIndex = (this.currentIndex + 1) % this.news.length; 
     this.currentNews = this.news[this.currentIndex];
