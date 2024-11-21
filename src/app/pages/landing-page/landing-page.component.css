@@ -60,3 +60,34 @@
     .options{ flex-direction: column; }
     .option {  width: 95vw;}
 }
+
+.icon { width: 10rem; height: 10rem;}
+.census {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15rem;
+}
+
+.cens {
+    width: 25rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 1rem;
+    border: 3px solid #016391;
+    color: #016391;
+    margin: 1rem;
+}
+
+.cens-number {
+    font-size: 6.4rem;
+}
+
+.cens-title {
+    font-size: 4rem;
+    color: #5A5A5A;
+}
