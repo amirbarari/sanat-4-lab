@@ -9,7 +9,7 @@
 .nav-bar-fix{
     position: fixed;
     top: 0;
-    width: calc(100% - 10px);
+    width: 100vw;
     display: flex;
     background-color: #03577bd6;
     justify-content: space-between;

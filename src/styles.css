@@ -4,6 +4,11 @@ body, html{
     margin: 0;
 }
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
 .icon{ width: 4.8rem; height: 4.8rem;}
 
 ::-webkit-scrollbar {

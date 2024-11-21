@@ -1,0 +1,47 @@
+.slider {
+    width: clac(100vw - 1rem);
+    height: calc(100vh - 6rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+}
+
+.slide {
+    width: 90%;
+    height: 95%;
+    background-color: black;
+    position: relative;
+}
+
+.img {
+    border-radius: 2rem;
+    /* position: relative; */
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    background-color: hsla(194, 97%, 13%, 0.75);
+    color: white;
+    font-size: 3.2rem;
+    width: 100%;
+    direction: rtl;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.change-img {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+}
+
+.prev-img{
+    left: 0rem;
+}
+.next-img {
+    right: 0rem;
+    rotate: 180deg;
+}
