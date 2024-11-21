@@ -33,3 +33,30 @@
     font-size: 2rem;
     color: white;
 }
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: -1;
+}
+
+.option {
+    width: 50vw;
+    height: 25vh;
+    max-height: 30rem;
+    min-height: 10rem;
+    margin-top: 12rem;
+    clip-path: polygon(0 0, 65% 0, 100% 98%, 0 100%);
+    z-index: -1;
+    filter: blur(3px);
+}
+
+.option-2 {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 38% 100%);
+}
+
+@media screen and (max-width: 900px) {
+    .options{ flex-direction: column; }
+    .option {  width: 95vw;}
+}
