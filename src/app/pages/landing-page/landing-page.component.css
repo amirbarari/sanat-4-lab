@@ -5,6 +5,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
 }
 
 .descriptions {
@@ -90,4 +93,33 @@
 .cens-title {
     font-size: 4rem;
     color: #5A5A5A;
+}
+
+.colleagues {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.colleague {
+    width: 22rem;
+    height: 22rem;
+    /* border: 5px solid; */
+    border-radius: 3rem;
+    /* border-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(164,164,164,1) 100%); */
+    background: linear-gradient(180deg, rgba(164,164,164,1) 0%, rgba(0,0,0,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    box-shadow: 5px 5px hsla(0, 0%, 53%, 0.45);
+}
+
+.clg-icon {
+    width: 16.4rem;
+}
+
+.footer {
+    background: rgb(0,24,26);
+    background: linear-gradient(180deg, rgba(0,24,26,1) 19%, rgba(1,42,57,1) 54%, rgba(1,65,94,1) 79%, rgba(1,99,145,1) 100%);
 }
