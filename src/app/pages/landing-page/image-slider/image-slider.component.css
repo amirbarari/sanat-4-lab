@@ -68,7 +68,7 @@
     .slide{ width: 95%; height: 100%;}
     .slider{ height: 200vh; }
 } */
-@media screen and (max-height: 900px) and (max-width: 700px) {
+@media screen and (max-height: 950px) and (max-width: 700px) {
     .change-img{ display: none;}
     .slide{ width: 95%; height: 90%;}
     .description{ font-size: 1.8rem;}

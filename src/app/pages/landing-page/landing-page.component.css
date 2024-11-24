@@ -1,6 +1,6 @@
 .bg-img {
     height: fit-content;
-    background-image: url('/assets/images/landing-bg.png');
+    background-image: url('../../../../public/assets/images/landing-bg2.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
