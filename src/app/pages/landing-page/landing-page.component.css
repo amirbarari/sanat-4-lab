@@ -64,6 +64,7 @@
     .option {  width: 95vw;}
 }
 
+
 .icon { width: 10rem; height: 10rem;}
 .census {
     display: flex;
@@ -71,6 +72,7 @@
     align-items: center;
     flex-wrap: wrap;
     margin-top: 15rem;
+    margin-bottom: 15rem;
 }
 
 .cens {
@@ -105,14 +107,12 @@
 .colleague {
     width: 22rem;
     height: 22rem;
-    /* border: 5px solid; */
     border-radius: 3rem;
-    /* border-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(164,164,164,1) 100%); */
     background: linear-gradient(180deg, rgba(164,164,164,1) 0%, rgba(0,0,0,1) 100%);
     display: flex;
     justify-content: center;
     align-self: center;
-    box-shadow: 5px 5px hsla(0, 0%, 53%, 0.45);
+    box-shadow: 5px 5px 10px hsla(0, 0%, 53%, 0.45);
 }
 
 .clg-icon {
@@ -120,6 +120,16 @@
 }
 
 .footer {
+    height: 50vh;
     background: rgb(0,24,26);
     background: linear-gradient(180deg, rgba(0,24,26,1) 19%, rgba(1,42,57,1) 54%, rgba(1,65,94,1) 79%, rgba(1,99,145,1) 100%);
+}
+
+@media screen and (max-width: 500px) {
+    .colleague { width: 15rem; height: 15rem;}
+    .clg-icon { width: 12rem;}
+    .cens { width: 15rem; height: 20rem; }
+    .cens-title { font-size: 3rem;}
+    .cens-number { font-size: 4rem;}
+    .icon{ width: 7rem; height: 7rem;}
 }
