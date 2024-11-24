@@ -177,11 +177,13 @@ hr { margin: 1rem 0;}
 
 .footer-clm { margin: 1.5rem;}
 
+
 .footer-logos {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: end;
+    margin: 1.5rem;
 }
 
 @media screen and (max-width: 500px) {
